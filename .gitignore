@@ -1,0 +1,37 @@
+# Haunted Address .gitignore
+
+# Dependencies and builds
+node_modules/
+dist/
+.vite/
+.wrangler/
+coverage/
+
+# Test output
+playwright-report/
+test-results/
+blob-report/
+
+# Secrets (keep .env.example)
+.env
+.env.*
+!.env.example
+.dev.vars
+
+# NOAA raw downloads (the small JSON in public/data/storms/ IS committed)
+scripts/.cache/
+
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+npm-debug.log*
+
+# Private working drafts for the submission (they stay on this PC).
+# Delete a line here if you decide to publish that file.
+DEVPOST.md
+VIDEO-SCRIPT.md
+SOCIAL-POST.md
+BLOG-OUTLINE.md
+NEXT-STEPS.md
