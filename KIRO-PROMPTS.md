@@ -272,7 +272,7 @@ Kiro's docs disagree on whether custom agents inherit steering by default, so th
 - If you are ahead of schedule and want one CLI story for the write-up (your call; installing WSL needs admin rights and a restart):
   1. In an admin PowerShell, run `wsl --install -d Ubuntu`, then restart.
   2. In Ubuntu, install Node 22.12 or newer and the CLI (`curl -fsSL https://cli.kiro.dev/install | bash`), then run `kiro-cli login` with the same account you use in the IDE.
-  3. Work in a clone inside Linux, not under `/mnt/c`, because Windows-installed `node_modules` won't run there: `git clone https://github.com/<you>/haunted-address ~/haunted-address`, then `cd ~/haunted-address`, then `npm ci`.
+  3. Work in a clone inside Linux, not under `/mnt/c`, because Windows-installed `node_modules` won't run there: `git clone https://github.com/yanzaaa/haunted-address ~/haunted-address`, then `cd ~/haunted-address`, then `npm ci`.
   4. Run `kiro-cli --agent ghost-auditor` and ask for an audit.
 - The CLI's V3 harness (the default for interactive `kiro-cli`) reads the same `.kiro/` steering, hooks, agents and MCP config. A headless run would need `--v3` and `--trust-tools`, and may ask for `KIRO_API_KEY`, which needs a paid plan. Skip headless.
 
